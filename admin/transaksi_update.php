@@ -38,6 +38,5 @@ if (!empty($_POST['jenis_pakaian'])) {
     }
 }
 
-header("Location: transaksi.php");
-exit;
+echo "<script>alert('Data Akan Diubah?'); window.location.href='transaksi.php'</script>";
 ?>

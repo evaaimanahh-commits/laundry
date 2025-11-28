@@ -30,8 +30,8 @@
 						<td><?php echo $d['pelanggan_hp']; ?></td>
 						<td><?php echo $d['pelanggan_alamat']; ?></td>
 						<td>
-							<a href="pelanggan_edit.php?id<?php echo $d['pelanggan_id']; ?>" class="btn btn-sm btn-info">Edit</a>
-							<a href="pelanggan_hapus.php?id<?php echo $d['pelanggan_id']; ?>" class="btn btn-sm btn-danger">Hapus</a>
+							<a href="pelanggan_edit.php?id=<?php echo $d['pelanggan_id']; ?>" class="btn btn-sm btn-info">Edit</a>
+							<a href="pelanggan_hapus.php?id=<?php echo $d['pelanggan_id']; ?>" class="btn btn-sm btn-danger">Hapus</a>
 						</td>
 					</tr>
 				<?php	

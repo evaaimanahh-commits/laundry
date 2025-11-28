@@ -11,6 +11,7 @@ $alamat = $_POST['alamat'];
 // input data ke tabel pelanggan
 mysqli_query($koneksi, "insert into pelanggan values('', '$nama', '$hp', '$alamat')");
 
-header("location:pelanggan.php");
+echo "<script>alert('Data Disimpan?'); window.location.href='pelanggan.php'</script>";
+
 
 ?>

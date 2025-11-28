@@ -23,7 +23,7 @@ include '../koneksi.php';
 				$transaksi = mysqli_query($koneksi,"select * from transaksi where transaksi_id='$id'");
 				while ($t=mysqli_fetch_array($transaksi)) {
 					?>
-					<form method="post" action="pelanggan_update.php">
+					<form method="post" action="transaksi_update.php">
 						<input type="hidden" name="id" value="<?php echo $t['transaksi_id']; ?>">
 
 						<div class="form-group">
@@ -90,7 +90,7 @@ include '../koneksi.php';
 
 						<div class="form-group alert alert-info">
 							<label>Status</label>
-							<select class="form-control" name="Status"required="required">
+							<select class="form-control" name="status"required="required">
 								
 								<option <?php if($t['transaksi_status']=="0"){echo "selected='selected'";} ?> value="0">PROSES</option>
 
